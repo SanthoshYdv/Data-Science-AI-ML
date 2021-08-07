@@ -83,9 +83,8 @@ mlp.fit(X_train,Y_train)
 # In[40]:
 
 
-prediction_train=mlp.predict(X_train)
 prediction_test = mlp.predict(X_test)
-prediction_train
+
 
 
 # In[42]:
@@ -94,5 +93,5 @@ prediction_train
 from sklearn.metrics import classification_report,confusion_matrix
 print(confusion_matrix(Y_test,prediction_test))
 np.mean(Y_test==prediction_test)
-np.mean(Y_train==prediction_train)
+
 
